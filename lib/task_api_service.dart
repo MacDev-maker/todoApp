@@ -20,6 +20,7 @@ class TaskApiService {
         final priority = priorities[random.nextInt(priorities.length)];
 
         return Task(
+          id: todo["id"], // Dodano mapowanie ID z API
           title: todo["todo"],
           deadline: "31-12-2026",
           done: todo["completed"],
